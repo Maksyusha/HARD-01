@@ -1,0 +1,25 @@
+:root {
+  --page-color: #F4F4F4;
+  --footer-color: #EFEFEF;
+  --text-color: #151515;
+  --text-second-color: #222222;
+
+  --link-color: #24B47E;
+  --link-active-color: #319E75;
+
+  --button-background-color: #FFFFFF;
+  --button-text-color: #FFFFFF;
+  --button-sun-url: url(../images/header/sun.svg);
+  --button-moon-url: url(../images/header/moon.svg);
+
+  --image-switcher-color: #EBEBEB;
+  --image-switcher-left-url: url(../images/surface/left-arrow.svg);
+  --image-switcher-right-url: url(../images/surface/right-arrow.svg);
+
+  --section-border-color: #E3E3E3;
+  --bike-line-color: #D7D4D4;
+
+  --dot-color: #CACACA;
+
+  --copyright-color: #CFCFCF;
+}
