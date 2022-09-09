@@ -49,29 +49,29 @@
           <div class="intro__bike-overlay"></div>
           <img
             class="intro__bike-image"
-            srcset="./images/intro/intro__bike-image-320.png 320w,
-                    ./images/intro/intro__bike-image-1440.png 1440w"
+            srcset="<%=require('./images/intro/intro__bike-image-320.png')%> 320w,
+                    <%=require('./images/intro/intro__bike-image-1440.png')%> 1440w"
             sizes="(min-width: 320px) 100vw"
-            src="./images/intro/intro__bike-image-1440.png"
+            src="<%=require('./images/intro/intro__bike-image-1440.png')%>"
             alt="Велосипед">
           <div class="intro__bike-overlay"></div>
         </div>
         <img
           class="intro__image"
-          srcset="./images/intro/intro__image-320.jpg 320w,
-                  ./images/intro/intro__image-1440.jpg 1440w"
+          srcset="<%=require('')%>./images/intro/intro__image-320.jpg 320w,
+                  <%=require('./images/intro/intro__image-1440.jpg')%> 1440w"
           sizes="(min-width: 320px) 100vw"
-          src="./images/intro/intro__image-1440.jpg"
+          src="<%=require('./images/intro/intro__image-1440.jpg')%>"
           alt="Фон блока">
       </div>
     </section>
     <section class="quote">
       <img
         class="quote__image"
-        srcset="./images/quote/quote__image-320.jpg 320w,
-                ./images/quote/quote__image-1440.jpg 1440w"
+        srcset="<%=require('./images/quote/quote__image-320.jpg')%> 320w,
+                <%=require('./images/quote/quote__image-1440.jpg')%> 1440w"
         sizes="(min-width: 320px) 100vw"
-        src="./images/quote/quote__image-1440.jpg"
+        src="<%=require('./images/quote/quote__image-1440.jpg')%>"
         alt="Фон блока">
       <div class="quote__text-container">
         <h2 class="quote__quotation">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</h2>
@@ -87,34 +87,34 @@
       <div class="surface__image-flex">
         <div class="surface__image-container">
           <div class="surface__marker-overlay">
-            <img class="surface__marker" src="./images/surface/highway-marker.svg" alt="Шоссе">
+            <img class="surface__marker" src="<%=require('./images/surface/highway-marker.svg')%>" alt="Шоссе">
           </div>
-          <img class="surface__image" src="./images/surface/highway.jpg" alt="Грэвел">
+          <img class="surface__image" src="<%=require('./images/surface/highway.jpg')%>" alt="Грэвел">
         </div>
         <div class="surface__image-container">
-          <img class="surface__image" src="./images/surface/gravel.jpg" alt="Грэвел">
+          <img class="surface__image" src="<%=require('./images/surface/gravel.jpg')%>" alt="Грэвел">
         </div>
       </div>
       <div class="surface__image-flex">
         <div class="surface__image-container">
           <div class="surface__marker-overlay">
-            <img class="surface__marker" src="./images/surface/gravel-marker.svg" alt="Грэвел">
+            <img class="surface__marker" src="<%=require('./images/surface/gravel-marker.svg')%>" alt="Грэвел">
           </div>
-          <img class="surface__image" src="./images/surface/gravel.jpg" alt="Грэвел">
+          <img class="surface__image" src="<%=require('./images/surface/gravel.jpg')%>" alt="Грэвел">
         </div>
         <div class="surface__image-container">
-          <img class="surface__image" src="./images/surface/tt.jpg" alt="ТТ">
+          <img class="surface__image" src="<%=require('./images/surface/tt.jpg')%>" alt="ТТ">
         </div>
       </div>
       <div class="surface__image-flex">
         <div class="surface__image-container">
           <div class="surface__marker-overlay">
-            <img class="surface__marker" src="./images/surface/tt-marker.svg" alt="ТТ">
+            <img class="surface__marker" src="<%=require('./images/surface/tt-marker.svg')%>" alt="ТТ">
           </div>
-          <img class="surface__image" src="./images/surface/tt.jpg" alt="ТТ">
+          <img class="surface__image" src="<%=require('./images/surface/tt.jpg')%>" alt="ТТ">
         </div>
         <div class="surface__image-container">
-          <img class="surface__image" src="./images/surface/highway.jpg" alt="Шоссе">
+          <img class="surface__image" src="<%=require('./images/surface/highway.jpg')%>" alt="Шоссе">
         </div>
       </div>
       <div class="surface__button-container">
@@ -140,7 +140,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/highway/highway-1.png" alt="Cervelo Caledonia-5">
+              <img class="bikes__image" src="<%=require('./images/bikes/highway/highway-1.png')%>" alt="Cervelo Caledonia-5">
             </div>
             <figcaption class="bikes__figcaption">Cervelo Caledonia-5</figcaption>
           </figure>
@@ -148,7 +148,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/highway/highway-2.png" alt="Cannondale Systemsix Himod">
+              <img class="bikes__image" src="<%=require('./images/bikes/highway/highway-2.png')%>" alt="Cannondale Systemsix Himod">
             </div>
             <figcaption class="bikes__figcaption">Cannondale Systemsix Himod</figcaption>
           </figure>
@@ -156,7 +156,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/highway/highway-3.png" alt="Trek Domane SL-7">
+              <img class="bikes__image" src="<%=require('./images/bikes/highway/highway-3.png')%>" alt="Trek Domane SL-7">
             </div>
             <figcaption class="bikes__figcaption">Trek Domane SL-7</figcaption>
           </figure>
@@ -166,7 +166,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/gravel/gravel-1.png" alt="Cervelo Aspero GRX 810">
+              <img class="bikes__image" src="<%=require('./images/bikes/gravel/gravel-1.png')%>" alt="Cervelo Aspero GRX 810">
             </div>
             <figcaption class="bikes__figcaption">Cervelo Aspero GRX 810</figcaption>
           </figure>
@@ -174,7 +174,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/gravel/gravel-2.png" alt="Specialized S-Works Diverge">
+              <img class="bikes__image" src="<%=require('./images/bikes/gravel/gravel-2.png')%>" alt="Specialized S-Works Diverge">
             </div>
             <figcaption class="bikes__figcaption">Specialized S-Works Diverge</figcaption>
           </figure>
@@ -182,7 +182,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/gravel/gravel-3.png" alt="Cannondale Topstone Lefty 3">
+              <img class="bikes__image" src="<%=require('./images/bikes/gravel/gravel-3.png')%>" alt="Cannondale Topstone Lefty 3">
             </div>
             <figcaption class="bikes__figcaption">Cannondale Topstone Lefty 3</figcaption>
           </figure>
@@ -192,7 +192,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/tt/tt-1.png" alt="Specialized S-Works Shiv">
+              <img class="bikes__image" src="<%=require('./images/bikes/tt/tt-1.png')%>" alt="Specialized S-Works Shiv">
             </div>
             <figcaption class="bikes__figcaption">Specialized S-Works Shiv</figcaption>
           </figure>
@@ -200,7 +200,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/tt/tt-2.png" alt="BMC Timemachine 01 ONE">
+              <img class="bikes__image" src="<%=require('./images/bikes/tt/tt-2.png')%>" alt="BMC Timemachine 01 ONE">
             </div>
             <figcaption class="bikes__figcaption">BMC Timemachine 01 ONE</figcaption>
           </figure>
@@ -208,7 +208,7 @@
         <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q" target="_blank">
           <figure class="bikes__figure">
             <div class="bikes__overlay">
-              <img class="bikes__image" src="./images/bikes/tt/tt-3.png" alt="Cervelo P-Series">
+              <img class="bikes__image" src="<%=require('./images/bikes/tt/tt-3.png')%>" alt="Cervelo P-Series">
             </div>
             <figcaption class="bikes__figcaption">Cervelo P-Series</figcaption>
           </figure>
@@ -230,10 +230,10 @@
       <div class="training__image-container">
         <img
           class="training__image"
-          srcset="./images/training/training__image-320.jpg 320w,
-                  ./images/training/training__image-1440.jpg 1440w"
+          srcset="<%=require('./images/training/training__image-320.jpg')%> 320w,
+                  <%=require('./images/training/training__image-1440.jpg')%> 1440w"
           sizes="(min-width: 320px) 100vw"
-          src="./images/training/training__image-1440.jpg"
+          src="<%=require('./images/training/training__image-1440.jpg')%>"
           alt="Фон блока">
       </div>
     </section>
@@ -248,7 +248,7 @@
     </div>
     <div class="footer__copyright-container">
       <p class="footer__copyright">© Road Club 2021</p>
-      <img class="footer__copyright-image" src="./images/footer/footer__copyright-image.svg" alt="Лого">
+      <img class="footer__copyright-image" src="<%=require('./images/footer/footer__copyright-image.svg')%>" alt="Лого">
       <div class="footer__theme theme">
         <div class="theme__item"></div>
         <fieldset class="theme__radio-container">
