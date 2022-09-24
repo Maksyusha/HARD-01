@@ -103,6 +103,7 @@
     width: 100px;
     height: 40px;
     background-image: url(../images/surface/marker.svg);
+    // background-image: var(--marker-url);
     background-repeat: no-repeat;
     z-index: 1;
   }
@@ -168,12 +169,17 @@
 
     @include tablet {
       margin: 0 10px 0 0;
+      background-position: left 9px center;
     }
   }
 
   &__button:last-child {
     background-image: var(--image-switcher-right-url);
     background-position: left 23px center;
+
+    @include tablet {
+      background-position: left 10px center;
+    }
   }
 
   &__button:hover {

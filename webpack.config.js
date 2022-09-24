@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './src/components/index.js'
+    main: './src/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -19,7 +19,7 @@ module.exports = {
     compress: true,
     port: 8080
   },
-  module:{
+  module: {
     rules: [{
         test: /\.js$/,
         use: 'babel-loader',
@@ -34,7 +34,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, {
             loader: 'css-loader',
             options: {
-              importLoaders: 1
+              importLoaders: 2
             }
           },
           'postcss-loader',

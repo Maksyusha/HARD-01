@@ -2,18 +2,14 @@
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   height: 74px;
   background-color: var(--page-color);
   z-index: 1;
-
-  @include tablet {
-
-  }
-
-  @include phone {
-  }
 
   &__hamburger-container {
     display: none;
@@ -118,7 +114,7 @@
   &__menu-list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0;

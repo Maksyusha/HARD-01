@@ -24,10 +24,12 @@
   &__image {
     max-width: 650px;
     max-height: 460px;
+    width: 45vw;
     margin-right: 40px;
     object-fit: contain;
 
     @include tablet {
+      width: auto;
       margin: 0;
     }
   }

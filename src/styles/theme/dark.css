@@ -9,12 +9,16 @@
 
   --button-background-color: #545454;
   --button-text-color: #FFFFFF;
-  --button-sun-url: url(../images/header/sun-dark.svg);
-  --button-moon-url: url(../images/header/moon-dark.svg);
+  --button-sun-url: url(./images/theme/sun-dark.svg);
+  --button-moon-url: url(./images/theme/moon-dark.svg);
 
   --image-switcher-color: #434343;
-  --image-switcher-left-url: url(../images/surface/left-arrow-dark.svg);
-  --image-switcher-right-url: url(../images/surface/right-arrow-dark.svg);
+  --image-switcher-left-url: url(./images/surface/left-arrow-dark.svg);
+  --image-switcher-right-url: url(./images/surface/right-arrow-dark.svg);
+
+  --marker-url: url(./images/surface/marker.svg);
+
+  --select-url: url(./images/bikes/select.svg);
 
   --section-border-color: #1c1c1c;
   --bike-line-color: #707070;

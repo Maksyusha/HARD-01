@@ -1,28 +1,3 @@
-@import url(../vendor/fonts.css);
-@import url(../variables/color.scss);
-@import url(./light.css);
-
-@import url(../blocks/_page.scss);
-@import url(../blocks/_theme.scss);
-@import url(../blocks/_header.scss);
-@import url(../blocks/_intro.scss);
-@import url(../blocks/_quote.scss);
-@import url(../blocks/_surface.scss);
-@import url(../blocks/_bikes.scss);
-@import url(../blocks/_training.scss);
-@import url(../blocks/_footer.scss);
-
-
-
-$desktopWide: 1440px;
-$desktop: 1200px;
-$laptop: 992px;
-$tablet: 768px;
-$phone: 480px;
-$phone-small: 320px;
-
-
-
 @mixin titleDesktop {
   font-weight: 700;
   font-size: 55px;
@@ -107,29 +82,3 @@ $phone-small: 320px;
     @content;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
