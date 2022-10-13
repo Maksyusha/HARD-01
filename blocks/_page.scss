@@ -1,0 +1,9 @@
+.page {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: var(--page-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}

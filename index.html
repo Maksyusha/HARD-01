@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/theme/light.css" media="all" id="light">
+  <link rel="stylesheet" href="./styles/theme/dark.css" media="not all" id="dark">
+  <link rel="stylesheet" href="./index.css">
+  <title>HARD-01</title>
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__hamburger-container">
+      <input class="header__hamburger-toggle" type="checkbox" id="hamburger">
+      <label class="header__hamburger-button" for="hamburger">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </label>
+    </div>
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item"><a class="header__menu-link" href="#surface">Покрытия и градиенты</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#bikes">Велосипеды</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#training">Тренировки</a></li>
+      </ul>
+      <div class="header__theme theme">
+        <div class="theme__item"></div>
+        <fieldset class="theme__radio-container">
+          <input class="theme__radio theme__radio_light" name="theme" type="radio" value="light">
+          <input class="theme__radio theme__radio_dark" name="theme" type="radio" value="dark">
+          <div class="theme__radio-status"></div>
+        </fieldset>
+        <div class="theme__item"></div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <h1 class="intro__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+      <p class="intro__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+      <a class="intro__link" href="#surface">Подробнее</a>
+      <div class="intro__name-container">
+        <p class="intro__name">Cannondale Systemsix</p>
+        <div class="intro__line"></div>
+      </div>
+      <div class="intro__image-container">
+        <div class="intro__lead">
+          <div class="intro__bike-overlay"></div>
+          <img
+            class="intro__bike-image"
+            src="./images/intro/intro__bike-image-1440.png"
+            alt="Велосипед">
+          <div class="intro__bike-overlay"></div>
+        </div>
+        <img
+          class="intro__image"
+          src="./images/intro/intro__image-1440.jpg"
+          alt="Фон блока">
+      </div>
+    </section>
+    <section class="quote">
+      <img
+        class="quote__image"
+        src="./images/quote/quote__image-1440.jpg"
+        alt="Фон блока">
+      <div class="quote__text-container">
+        <h2 class="quote__quotation">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</h2>
+        <div class="quote__author-container">
+          <h3 class="quote__author">Эдди Меркс</h3>
+          <p class="quote__author-job">Велогонщик</p>
+        </div>
+      </div>
+    </section>
+    <section class="surface" id="surface">
+      <h1 class="surface__title">Шоссе</h1>
+      <p class="surface__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
+      <div class="surface__image-flex">
+        <div class="surface__image-container">
+          <div class="surface__marker-overlay">
+            <img class="surface__marker" src="./images/surface/highway-marker.svg" alt="Шоссе">
+          </div>
+          <img class="surface__image" src="./images/surface/highway.jpg" alt="Грэвел">
+        </div>
+        <div class="surface__image-container">
+          <img class="surface__image" src="./images/surface/gravel.jpg" alt="Грэвел">
+        </div>
+      </div>
+      <div class="surface__image-flex">
+        <div class="surface__image-container">
+          <div class="surface__marker-overlay">
+            <img class="surface__marker" src="./images/surface/gravel-marker.svg" alt="Грэвел">
+          </div>
+          <img class="surface__image" src="./images/surface/gravel.jpg" alt="Грэвел">
+        </div>
+        <div class="surface__image-container">
+          <img class="surface__image" src="./images/surface/tt.jpg" alt="ТТ">
+        </div>
+      </div>
+      <div class="surface__image-flex">
+        <div class="surface__image-container">
+          <div class="surface__marker-overlay">
+            <img class="surface__marker" src="./images/surface/tt-marker.svg" alt="ТТ">
+          </div>
+          <img class="surface__image" src="./images/surface/tt.jpg" alt="ТТ">
+        </div>
+        <div class="surface__image-container">
+          <img class="surface__image" src="./images/surface/highway.jpg" alt="Шоссе">
+        </div>
+      </div>
+      <div class="surface__button-container">
+        <button type="button" class="surface__button surface__button_type_left"></button>
+        <button type="button" class="surface__button surface__button_type_right"></button>
+      </div>
+    </section>
+    <section class="bikes" id="bikes">
+      <h1 class="bikes__title">Велосипеды</h1>
+      <div class="bikes__switcher-container">
+        <button class="bikes__switcher bikes__switcher_active" value="Шоссе">Шоссе</button>
+        <button class="bikes__switcher" value="Грэвел">Грэвел</button>
+        <button class="bikes__switcher" value="ТТ">TT</button>
+      </div>
+      <div class="bikes__select">
+        <select class="bikes__select-standart">
+          <option class="bikes__select-item">Шоссе</option>
+          <option class="bikes__select-item">Грэвел</option>
+          <option class="bikes__select-item">ТТ</option>
+        </select>
+      </div>
+      <div class="bikes__image-container">
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/highway/highway-1.png" alt="Cervelo Caledonia-5">
+            </div>
+            <figcaption class="bikes__figcaption">Cervelo Caledonia-5</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/highway/highway-2.png" alt="Cannondale Systemsix Himod">
+            </div>
+            <figcaption class="bikes__figcaption">Cannondale Systemsix Himod</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/highway/highway-3.png" alt="Trek Domane SL-7">
+            </div>
+            <figcaption class="bikes__figcaption">Trek Domane SL-7</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="bikes__image-container">
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/gravel/gravel-1.png" alt="Cervelo Aspero GRX 810">
+            </div>
+            <figcaption class="bikes__figcaption">Cervelo Aspero GRX 810</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/gravel/gravel-2.png" alt="Specialized S-Works Diverge">
+            </div>
+            <figcaption class="bikes__figcaption">Specialized S-Works Diverge</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/gravel/gravel-3.png" alt="Cannondale Topstone Lefty 3">
+            </div>
+            <figcaption class="bikes__figcaption">Cannondale Topstone Lefty 3</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="bikes__image-container">
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/tt/tt-1.png" alt="Specialized S-Works Shiv">
+            </div>
+            <figcaption class="bikes__figcaption">Specialized S-Works Shiv</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/tt/tt-2.png" alt="BMC Timemachine 01 ONE">
+            </div>
+            <figcaption class="bikes__figcaption">BMC Timemachine 01 ONE</figcaption>
+          </figure>
+        </a>
+        <a class="bikes__link" href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q" target="_blank">
+          <figure class="bikes__figure">
+            <div class="bikes__overlay">
+              <img class="bikes__image" src="./images/bikes/tt/tt-3.png" alt="Cervelo P-Series">
+            </div>
+            <figcaption class="bikes__figcaption">Cervelo P-Series</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="bikes__dots">
+        <div class="bikes__dot bikes__dot_active"></div>
+        <div class="bikes__dot"></div>
+        <div class="bikes__dot"></div>
+      </div>
+    </section>
+    <section class="training" id="training">
+      <h1 class="training__title">Тренировки</h1>
+      <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+      <div class="training__apps-container">
+        <a class="training__app-name" href="https://www.strava.com" target="_blank">Strava</a>
+        <a class="training__app-name" href="https://www.komoot.com" target="_blank">Komoot</a>
+      </div>
+      <div class="training__image-container">
+        <img
+          class="training__image"
+          src="./images/training/training__image-1440.jpg"
+          alt="Фон блока">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__text-container">
+      <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+      <form class="footer__form" novalidate>
+        <input class="footer__input" type="email" placeholder="Ваш e-mail">
+        <button class="footer__submit" type="submit">ok</button>
+      </form>
+    </div>
+    <div class="footer__copyright-container">
+      <p class="footer__copyright">© Road Club 2021</p>
+      <img class="footer__copyright-image" src="./images/footer/footer__copyright-image.svg" alt="Лого">
+      <div class="footer__theme theme">
+        <div class="theme__item"></div>
+        <fieldset class="theme__radio-container">
+          <input class="theme__radio theme__radio_light" name="theme" type="radio" value="light">
+          <input class="theme__radio theme__radio_dark" name="theme" type="radio" value="dark">
+          <div class="theme__radio-status"></div>
+        </fieldset>
+        <div class="theme__item"></div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

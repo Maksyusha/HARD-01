@@ -1,0 +1,84 @@
+@mixin titleDesktop {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+@mixin titleLaptop {
+  font-size: 48px;
+  line-height: 54px;
+}
+
+@mixin titleTablet {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@mixin titlePhone {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+
+
+@mixin textDesktop {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-second-color);
+  opacity: .7;
+}
+
+@mixin textLaptop {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin textTablet {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin textPhone {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+
+@mixin desktopWide {
+  @media screen and (max-width: $desktopWide) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin phoneSmall {
+  @media screen and (max-width: $phone-small) {
+    @content;
+  }
+}
